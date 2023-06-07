@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;700;900&display=swap');
+
+body{
+  min-height: 100%;
+  max-width: 100%;
+  background-color: rgb(54, 51, 70);
+  color: white;
+  font-family: 'Poppins', sans-serif;
+}
+
+.container{
+  min-height: 50px;
+  background-color: rgb(58, 55, 82);
+  width: auto;  
+  height: 600px;
+  margin: 92px 200px;
+  padding: 30px;
+  color: white;
+  display: flex;
+}
+
+.img-container{
+  background-color: white;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 55%;
+  display: flex;
+  flex-direction: row; /* before col */
+  align-items: center;
+  color: black;
+}
+
+.img-container h2{
+  margin-top: -10px;
+}
+
+.form{
+  margin: 25px auto;
+  width: 45%;
+  background-color: #3C3BCB;
+  box-shadow: -10px 0 20px -3px rgba(0, 0, 0, 0.75);
+
+}
+
+.upper{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+input{
+  outline: none;
+  border: 1.5px solid #ccc;
+  background-color: transparent;
+  transition: 200ms;
+}
+
+input:focus{
+  border: 2px solid #000000;
+  transition: 400ms;
+}
+
+input::placeholder{
+  color: white;
+}
+
+input[type=text]{
+  color: white;
+  padding: 2px 12px;
+}
+
+input[type=password]{
+  color: white;
+}
+
+.upper input{
+  width: 80%;
+  height: 40px;
+  margin-bottom: 20px;
+}
+
+.lower input{
+  width: calc(100% - 67.5%);
+  margin: 0 20px;
+  height: 40px;
+  margin-left: 43px;
+}
+
+h2{
+  padding: 15px 0;
+}
+
+a button{
+  display: inline-block;
+  position: relative;
+  margin: 25px 45px;
+  height: 50px;
+  width: 235px;
+  border: none;
+  background-color: white;
+  color: black;
+  transition: background-color 400ms;
+  cursor: pointer;
+  font-weight: 700;
+  font-size: larger;
+}
+
+
+a button:hover{
+  background-color: rgb(157, 89, 195);
+  transition: background-color 400ms;
+}
+
+.img-container .left{
+  flex: 4.5%;
+  height: 100%;
+  display: grid;
+  place-items: center;
+  transition: 400ms;
+  cursor: pointer;
+}
+
+.img-container .center{
+  flex: 80%;
+  height: 100%;
+  width: 100%;
+  text-align: center;
+}
+
+.img-container .center img{
+  width: auto;
+  margin-right: 0 auto;
+}
+
+.img-container .right{
+  flex: 5%;
+  height: 100%;
+  display: grid;
+  place-items: center;
+  transition: 400ms;
+  cursor: pointer;
+}
+
+.img-container .right:hover{
+  background-color: rgb(0, 0, 0, 0.2);
+  transition: background-color 600ms ease-in-out;
+}
+
+.img-container .left:hover{
+  background-color: rgb(0, 0, 0, 0.2);
+  transition: background-color 600ms ease-in-out;
+}
+
+.img-container .right .btn-right{
+  border: solid black;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 3px;
+  transform: rotate(-45deg);
+  scale: 1.3;
+}
+
+.img-container .left .btn-left{
+  border: solid black;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 3px;
+  transform: rotate(135deg);
+  scale: 1.3;
+}
+
+.img-container .center h3{
+  padding-top: 20px;
+  font-size: 23px;
+  font-weight: 500;
+}
